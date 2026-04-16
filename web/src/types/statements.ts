@@ -32,3 +32,9 @@ export type PeriodSummary = {
   periodMonth: number
   periodYear: number
 }
+
+export type ParsedStatementData = {
+  statement: Statement
+  movements: Movement[]
+  summary: PeriodSummary
+}

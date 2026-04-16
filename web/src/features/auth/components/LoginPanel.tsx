@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import type { DemoAccount } from '../../dashboard/mockData'
+import type { DemoAccount } from '../model/demoAccount'
 
 type LoginPanelProps = {
   accounts: DemoAccount[]
@@ -7,8 +7,8 @@ type LoginPanelProps = {
 }
 
 export function LoginPanel({ accounts, onLogin }: LoginPanelProps) {
-  const [username, setUsername] = useState(accounts[0]?.user.username ?? '')
-  const [password, setPassword] = useState('Password123')
+  const [username, setUsername] = useState('')
+  const [password, setPassword] = useState('')
   const [errorMessage, setErrorMessage] = useState('')
 
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
@@ -40,6 +40,7 @@ export function LoginPanel({ accounts, onLogin }: LoginPanelProps) {
           <span>Usuario</span>
           <input
             autoComplete="username"
+            placeholder="Introduce tu usuario"
             value={username}
             onChange={(event) => setUsername(event.target.value)}
           />
@@ -50,6 +51,7 @@ export function LoginPanel({ accounts, onLogin }: LoginPanelProps) {
           <input
             type="password"
             autoComplete="current-password"
+            placeholder="Introduce tu contrasena"
             value={password}
             onChange={(event) => setPassword(event.target.value)}
           />

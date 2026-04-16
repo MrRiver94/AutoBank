@@ -2,19 +2,19 @@ import type { User } from '../../../types/auth'
 import type { PeriodSummary } from '../../../types/statements'
 import { StatusCard } from './StatusCard'
 
-type StatusOverviewProps = {
+type DashboardStatusOverviewProps = {
   currentUser: User
   periodSummary: PeriodSummary
   periodLabelOverride?: string
   summaryDescription?: string
 }
 
-export function StatusOverview({
+export function DashboardStatusOverview({
   currentUser,
   periodSummary,
   periodLabelOverride,
   summaryDescription,
-}: StatusOverviewProps) {
+}: DashboardStatusOverviewProps) {
   const primaryPermission = currentUser.permissions[0] ?? 'Sin permisos'
   const periodLabel =
     periodLabelOverride ?? `${periodSummary.periodMonth}/${periodSummary.periodYear}`

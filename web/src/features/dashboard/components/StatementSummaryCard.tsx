@@ -1,6 +1,6 @@
 import type { PeriodSummary, Statement } from '../../../types/statements'
 
-type SummaryMetricsProps = {
+type StatementSummaryCardProps = {
   statement: Statement
   summary: PeriodSummary
   eyebrow?: string
@@ -12,14 +12,14 @@ const currencyFormatter = new Intl.NumberFormat('es-ES', {
   currency: 'EUR',
 })
 
-export function SummaryMetrics({
+export function StatementSummaryCard({
   statement,
   summary,
   eyebrow = 'Extracto actual',
   title,
-}: SummaryMetricsProps) {
+}: StatementSummaryCardProps) {
   return (
-    <article className="content-card">
+    <article className="content-card statement-summary-card">
       <div className="section-heading">
         <div>
           <p className="eyebrow">{eyebrow}</p>

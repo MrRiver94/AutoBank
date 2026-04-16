@@ -1,0 +1,12 @@
+﻿date,description,amount,balance,category
+2025-06-01,Nomina,2475.00,3525.00,Ingresos
+2025-06-03,Transferencia ahorro,-275.00,3250.00,Ahorro
+2025-06-05,Alquiler vivienda,-860.00,2390.00,Vivienda
+2025-06-08,Supermercado,-131.00,2259.00,Alimentacion
+2025-06-10,Factura suministros,-78.00,2181.00,Suministros
+2025-06-14,Gasolina,-75.00,2106.00,Transporte
+2025-06-18,Restaurante y ocio,-58.00,2048.00,Ocio
+2025-06-22,Farmacia,-22.80,2025.20,Salud
+2025-06-25,Cuota gimnasio,-35.20,1990.00,Bienestar
+2025-06-27,Reembolso gastos,49.00,2039.00,Ingresos
+2025-06-28,Intereses cuenta,7.10,2046.10,Ingresos

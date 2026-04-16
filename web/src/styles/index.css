@@ -1,11 +1,38 @@
 :root {
+  --color-ink-950: #34111a;
+  --color-ink-900: #52202b;
+  --color-ink-800: #713742;
+  --color-ink-rgb: 52, 17, 26;
+  --color-muted-700: #8f6770;
+  --color-muted-500: #b899a0;
+  --color-surface-0: #fff6f5;
+  --color-surface-0-rgb: 255, 246, 245;
+  --color-surface-50: #fffdfc;
+  --color-surface-50-rgb: 255, 253, 252;
+  --color-surface-100: #f9ecea;
+  --color-surface-100-rgb: 249, 236, 234;
+  --color-surface-200: #efd9d6;
+  --color-surface-200-rgb: 239, 217, 214;
+  --color-brand-700: #9e2734;
+  --color-brand-600: #b9313f;
+  --color-brand-500: #d85b68;
+  --color-brand-rgb: 185, 49, 63;
+  --color-accent-500: #ef8c94;
+  --color-accent-rgb: 239, 140, 148;
+  --color-success-600: #2d7b5b;
+  --color-success-rgb: 45, 123, 91;
+  --color-danger-600: #8b1828;
+  --color-danger-rgb: 139, 24, 40;
+  --shadow-soft: 0 18px 60px rgba(52, 17, 26, 0.08);
+  --shadow-strong: 0 24px 70px rgba(52, 17, 26, 0.14);
   font-family: "Segoe UI", "Helvetica Neue", sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  color: #14213d;
+  color: var(--color-ink-950);
   background:
-    radial-gradient(circle at top, rgba(95, 140, 255, 0.1), transparent 35%),
-    linear-gradient(180deg, #fcfdff 0%, #eef3f9 100%);
+    radial-gradient(circle at top left, rgba(var(--color-brand-rgb), 0.16), transparent 24%),
+    radial-gradient(circle at top right, rgba(var(--color-accent-rgb), 0.18), transparent 18%),
+    linear-gradient(180deg, #fff8f7 0%, #f8ecea 100%);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -18,6 +45,7 @@
 
 html {
   min-width: 320px;
+  min-height: 100%;
 }
 
 body {
@@ -44,4 +72,8 @@ a {
 
 #root {
   min-height: 100vh;
+}
+
+body {
+  color: var(--color-ink-950);
 }

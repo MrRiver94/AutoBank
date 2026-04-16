@@ -1,0 +1,12 @@
+﻿date,description,amount,balance,category
+2026-09-01,Nomina,2485.00,3655.00,Ingresos
+2026-09-03,Transferencia ahorro,-277.00,3378.00,Ahorro
+2026-09-05,Alquiler vivienda,-870.00,2508.00,Vivienda
+2026-09-08,Supermercado,-131.00,2377.00,Alimentacion
+2026-09-10,Factura suministros,-71.00,2306.00,Suministros
+2026-09-14,Gasolina,-72.00,2234.00,Transporte
+2026-09-18,Restaurante y ocio,-52.00,2182.00,Ocio
+2026-09-22,Farmacia,-26.40,2155.60,Salud
+2026-09-25,Cuota gimnasio,-35.80,2119.80,Bienestar
+2026-09-27,Reembolso gastos,67.00,2186.80,Ingresos
+2026-09-28,Intereses cuenta,8.95,2195.75,Ingresos
